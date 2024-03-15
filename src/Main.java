@@ -37,14 +37,14 @@ public class Main {
         int pavardesilgis = pavarde.length() - 3;
         String result = "";
 
-        if(vardas.length() < 3 ) {
+        if (vardas.length() < 3) {
             result += vardas;
-        }else {
+        } else {
             result += vardas.substring(vardas.length() - 3);
         }
-        if(pavarde.length() < 3 ) {
+        if (pavarde.length() < 3) {
             result += pavarde;
-        }else {
+        } else {
             result += pavarde.substring(pavarde.length() - 3);
         }
 
@@ -57,11 +57,41 @@ public class Main {
         System.out.println(A.replace("a", "*").replace("A", "*"));
 
 
-//6a.dfjhkdfhkdhkdjhd
+//6a.Sukurti kintamąjį su stringu: “An American in Paris”.
+// Jame ištrinti visas balses. Rezultatą atspausdinti.
+// Kodą pakartoti su stringais: “Breakfast at Tiffany's”,
+// “2001: A Space Odyssey” ir “It's a Wonderful Life”
+
+        String balses = "An American in Paris";
+        String bebalses = "";
+        bebalses = balses.replaceAll("[a,i]", "");
+        System.out.println("be balsiu: " + bebalses);
+
+        balses = "Breakfast at Tiffany's";
+        bebalses = balses.replaceAll("[aeiouy]", "");
+        System.out.println("be balsiu: " + bebalses);
+        bebalses
+                .replace("a", "")
+                .replace("e", "")
+                .replace("i", "");
 
 
+        System.out.println("asd984a1a6sdAEEADS168aesasd13asds".replaceAll("[^a-zA-Z]", ""));
 
+//7a uzd
+//        Stringe, kurį generuoja toks kodas: "Star Wars: Episode "+ " ".repeat( (int) (Math.random() * 10))+((int) (Math.random() * 7)+1) + " - A New Hope" Surasti ir atspausdinti epizodo numerį.
 
+//  int skaicius = Math.random() * 10))+((int) (Math.random() * 7)+1);
+//
+//        System.out.println((Math.random() * 10))+((int) (Math.random() * 7)+1));
+
+        String episode = ("Star Wars: Episode " + " ".repeat((int) (Math.random() * 10)) + ((int) (Math.random() * 7) + 1) + " - A New Hope");
+
+//        System.out.println("Star Wars: Episode " + " ".repeat((int) (Math.random() * 10)) + ((int) (Math.random() * 7) + 1) + " - A New Hope");
+
+        System.out.println(episode);
+
+        System.out.println(episode.replaceAll()
 
 
 
