@@ -57,7 +57,7 @@ public class Main {
         System.out.println(A.replace("a", "*").replace("A", "*"));
 
 
-//6a.
+//6a.dfjhkdfhkdhkdjhd
 
 
 
